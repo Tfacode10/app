@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Continuar Compra</title>
+    <link rel="stylesheet" href="css/continuarCompra.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+  
+    <header class="encabezado">
+        <div class="contenedor_encabezado">
+            <a href="index.html"><img src="imagenes/logo_sFondoB.png" alt="Logo de CAFETIX" class="logo" /></a>
+            <h1 class="titulo">CAFETIX</h1>
+        </div>
+    </header>
+
+ 
+    <nav class="nav">
+        <a href="index.html"><i class="fa-solid fa-house"></i> Inicio</a>
+        <a href="promociones.html"><i class="fa-solid fa-fire"></i> Promociones</a>
+        <a href="categoriasProductos.html"><i class="fa-solid fa-mug-saucer"></i> Productos</a>
+        <a href="compras.html"><i class="fa-solid fa-cart-shopping"></i> Compras</a>
+        <a href="oferta.html"><i class="fa-solid fa-circle-dollar-to-slot"></i> Ofertas</a>
+        <a href="inicioSesion.html"><i class="fa-solid fa-circle-user"></i> Iniciar sesión</a>
+    </nav>
+
+   
+    <main class="contenedor-formulario">
+        <section class="formulario">
+            <h2>DETALLES DE COMPRA</h2>
+            <form>
+                <h4>Datos de envío</h4>
+                <div class="input-con-icono">
+                    <i class="fa-solid fa-user icono"></i>
+                    <input type="text" name="nombre" placeholder="Nombre completo" required>
+                </div>
+                <div class="input-con-icono">
+                    <i class="fa-solid fa-location-dot icono"></i>
+                    <input type="text" name="direccion" placeholder="Dirección completa" required>
+                </div>
+                <div class="input-con-icono">
+                    <i class="fa-solid fa-phone icono"></i>
+                    <input type="tel" name="telefono" placeholder="Número de teléfono" required>
+                </div>
+                <div class="input-con-icono">
+                    <i class="fa-solid fa-envelope icono"></i>
+                    <input type="email" name="correo" placeholder="Correo electrónico" required>
+                </div>
+
+                <h4>Método de pago</h4>
+                <div class="input-con-icono">
+                    <i class="fa-solid fa-credit-card icono"></i>
+                    <select name="pago" required>
+                        <option value="">Selecciona una opción</option>
+                        <option value="tarjeta">Tarjeta de crédito/débito</option>
+                        <option value="paypal">PayPal</option>
+                        <option value="oxxo">Pago en OXXO</option>
+                    </select>
+                </div>
+
+                <div class="botones-formulario">
+                    <a href="compras.html" class="boton-link cancelar">Cancelar</a>
+                    <a href="confirmacion.html" class="boton-link continuar">Finalizar Compra</a>
+                </div>
+            </form>
+        </section>
+    </main>
+
+  
+  <footer class="pie_pagina">
+    <table class="tabla_pie_pagina">
+        <tr>
+            <td class="pie_pagina_izq">
+                <p> <i class="fa-solid fa-route"></i> Av. Cuarta Avenida 257,Plaza Chedraui,</p>
+                <p>Local 29, México City, Nezahualcóyotl, 57809</p>
+            </td>
+            <td class="pie_pagina_der">
+                <p> © OMEGA </p>
+            </td>
+        </tr>
+    </table>
+</footer>
+</body>
+</html>

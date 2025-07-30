@@ -1,0 +1,247 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e1dab8;
+}
+
+.encabezado {
+    width: 100%;
+    background-color: #6b5b50;
+    padding: 1rem;
+}
+
+.contenedor_encabezado {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+    padding-left: 1rem;
+    flex-wrap: nowrap; 
+}
+
+.logo {
+    width: 60px;
+    height: auto;
+    flex-shrink: 0;
+}
+
+.titulo {
+    font-size: 2rem;
+    color: white;
+    white-space: nowrap;
+}
+
+.nav {
+    width: 100%;
+    background-color: #e1dab8;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    border-bottom: 2px solid #4d332d;
+    overflow-x: hidden;
+    white-space: nowrap;
+    flex-wrap: nowrap;
+}
+
+.nav a {
+    flex: 1 1 auto;
+    font-size: 1rem;
+    color: #4d332d;
+    text-decoration: none;
+    padding: 0.4rem 0.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.3rem;
+    white-space: nowrap;
+    transition: background-color 0.3s ease;
+    min-width: 50px;
+}
+
+.nav a:hover {
+    background-color: #6b5b50;
+    color: #ffffff;
+    border-radius: 1vw;
+}
+
+.titulo_categoria {
+    padding-top: 0.5%;
+    text-align: center;
+    font-size: 2.5rem;
+    color: #4e342e;
+    margin-bottom: 0.1rem;
+}
+
+.contenedor_categoria {
+    background-color: #e1dab8;
+    padding: 3rem;
+    max-width: 70%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    flex-grow: 1;
+}
+
+.categoria {
+    background-color: #f1efe3;
+    padding: 1.2rem;
+    border-radius: 1.4vw;
+    box-shadow: 0 2px 5px #4d4c45;
+    text-align: center;
+    transition: all 0.5s ease;
+}
+
+.categoria:hover {
+    background-color: rgba(143, 121, 106, 0.85);
+    transform: translateY(-5px) scale(1.02);
+}
+
+.categoria a {
+    color: inherit;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.categoria img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto 0.5rem;
+}
+
+.pie_pagina {
+    background-color: #6b5b50;
+    padding: 1.5rem 0;
+    color: #ffffff;
+    width: 100%;
+    text-align: center;
+    flex-shrink: 0;
+}
+
+.tabla_pie_pagina {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.tabla_pie_pagina td {
+    padding: 1rem;
+    font-size: 0.9em;
+    flex-basis: 45%;
+    max-width: 45%;
+    text-align: center;
+}
+
+@media screen and (max-width: 1000px) {
+    .contenedor_encabezado {
+        gap: 0.8rem;
+    }
+
+    .nav {
+        justify-content: space-around;
+        gap: 0.4rem;
+        padding: 0.4rem;
+    }
+
+    .nav a {
+        font-size: 0.9rem;
+        padding: 0.3rem 0.5rem;
+        gap: 0.2rem;
+    }
+
+    .contenedor_categoria {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .nav {
+        gap: 0.3rem;
+        padding: 0.3rem;
+    }
+
+    .nav a {
+        font-size: 0.8rem;
+        gap: 0.2rem;
+    }
+
+    .contenedor_categoria {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .tabla_pie_pagina {
+        flex-direction: column;
+        align-items: center;
+        padding: 0 1rem;
+    }
+
+    .tabla_pie_pagina td {
+        flex-basis: 100%;
+        max-width: 100%;
+        padding: 0.5rem 0;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .nav {
+        justify-content: space-between;
+        gap: 0.2rem;
+    }
+
+    .nav a {
+        font-size: 0.75rem;
+        padding: 0.2rem 0.4rem;
+        gap: 0.1rem;
+    }
+
+    .contenedor_categoria {
+        grid-template-columns: 1fr;
+        border-radius: 5px;
+    }
+
+    .tabla_pie_pagina td {
+        font-size: 0.75em;
+    }
+
+    .encabezado {
+        padding: 0.8rem 1rem;
+    }
+
+    .contenedor_encabezado {
+        gap: 1rem;
+        padding-left: 1rem;
+        justify-content: flex-start;
+        flex-wrap: nowrap;
+        overflow: hidden;
+    }
+
+    .logo {
+        width: 60px;
+        height: auto;
+        flex-shrink: 0;
+    }
+
+    .titulo {
+        font-size: 1.4rem;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: calc(100vw - 100px);
+        display: block;
+    }
+}

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>COMPRAS</title>
+    <link rel="stylesheet" href="css/estiloc.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+
+<body>
+    <header class="encabezado">
+        <div class="contenedor_encabezado">
+            <img src="imagenes/logo_sFondoB.png" alt="Logo de CAFETIX" class="logo" />
+            <h1 class="titulo">CAFETIX</h1>
+        </div>
+    </header>
+
+   <nav class="nav">
+    <a href="index.html"><i class="fa-solid fa-house"></i> Inicio</a>
+    <a href="promociones.html"><i class="fa-solid fa-fire"></i> Promociones</a>
+    <a href="categoriasProductos.html"><i class="fa-solid fa-mug-saucer"></i> Productos</a>
+    <a href="compras.html"><i class="fa-solid fa-cart-shopping"></i> Compras </a>
+    <a href="oferta.html"><i class="fa-solid fa-circle-dollar-to-slot"></i> Ofertas</a>
+    <a href="inicioSesion.html"> <i class="fa-solid fa-circle-user"></i>  Iniciar sesión</a>
+</nav>
+
+    <main class="contenedor-main">
+        <section class="productos">
+            <h2 class="titulo_galeria">Tu Pedido</h2>
+
+            <div class="producto-item">
+                <div class="producto-imagen">
+                    <img src="imagenes/bebfri5.png" alt="Cafe" />
+                </div>
+                <div class="producto-detalles">
+                    <strong>Capuccino</strong>
+                    <div class="producto-acciones">
+                        <a href="#" class="eliminar"><i class="fas fa-trash"></i> ELIMINAR</a>
+                        <a href="#" class="comprar"><i class="fas fa-credit-card"></i> COMPRAR AHORA</a>
+                    </div>
+                </div>
+                <div class="cantidad">
+                    <input type="number" value="1" min="1" />
+                </div>
+                <div class="precio">$63</div>
+            </div>
+
+            <div class="producto-item">
+                <div class="producto-imagen">
+                    <img src="imagenes/bebfri3.png" alt="Malteada de Fresa" />
+                </div>
+                <div class="producto-detalles">
+                    <strong>Malteada de Fresa</strong>
+                    <div class="producto-acciones">
+                        <a href="#" class="eliminar"><i class="fas fa-trash"></i> ELIMINAR</a>
+                        <a href="#" class="comprar"><i class="fas fa-credit-card"></i> COMPRAR AHORA</a>
+                    </div>
+                </div>
+                <div class="cantidad">
+                    <input type="number" value="1" min="1" />
+                </div>
+                <div class="precio">$75</div>
+            </div>
+
+            <div class="producto-item">
+                <div class="producto-imagen">
+                    <img src="imagenes/bebfri1.png" alt="Frappe" />
+                </div>
+                <div class="producto-detalles">
+                    <strong>Fappe de chocolate</strong>
+                    <div class="producto-acciones">
+                        <a href="#" class="eliminar"><i class="fas fa-trash"></i> ELIMINAR</a>
+                        <a href="#" class="comprar"><i class="fas fa-credit-card"></i> COMPRAR AHORA</a>
+                    </div>
+                </div>
+                <div class="cantidad">
+                    <input type="number" value="1" min="1" />
+                </div>
+                <div class="precio">$80</div>
+            </div>
+
+        </section>
+
+        <aside class="resumen">
+            <h3>RESUMEN DE COMPRA</h3>
+            <p>PRODUCTO: 3 artículos</p>
+            <p>ENVÍO: Gratis</p>
+            <p><strong>TOTAL:</strong> $218</p>
+            <button><a href="continuarCompra.html" class="comprar">CONTINUAR COMPRA</button></a>
+        </aside>
+    </main>
+
+   <footer class="pie_pagina">
+    <table class="tabla_pie_pagina">
+        <tr>
+            <td class="pie_pagina_izq">
+                <p> <i class="fa-solid fa-route"></i> Av. Cuarta Avenida 257,Plaza Chedraui,</p>
+                <p>Local 29, México City, Nezahualcóyotl, 57809</p>
+            </td>
+            <td class="pie_pagina_der">
+                <p> © OMEGA </p>
+            </td>
+        </tr>
+    </table>
+</footer>
+</body>
+
+</html>

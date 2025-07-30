@@ -1,0 +1,221 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e1dab8;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.encabezado {
+    width: 100%;
+    background-color: #6b5b50;
+    padding: 1rem;
+}
+.contenedor_encabezado {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+    padding-left: 1rem;
+    flex-wrap: nowrap;
+}
+.logo {
+    width: 60px;
+    height: auto;
+}
+.titulo {
+    font-size: 2rem;
+    color: white;
+    white-space: nowrap;
+}
+
+.nav {
+    width: 100%;
+    background-color: #e1dab8;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    border-bottom: 2px solid #4d332d;
+    overflow-x: hidden;
+    white-space: nowrap;
+    flex-wrap: nowrap; 
+    gap: 0.4rem;
+}
+
+.nav a {
+    flex: 1 1 auto;
+    font-size: 1rem;
+    color: #4d332d;
+    text-decoration: none;
+    padding: 0.4rem 0.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.3rem;
+    white-space: nowrap;
+    transition: background-color 0.3s ease;
+    min-width: 50px;
+}
+.nav a:hover {
+    background-color: #6b5b50;
+    color: #ffffff;
+    border-radius: 1vw;
+}
+
+main.contenedor-formulario {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.formulario {
+    background-color: #F1EFE3;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+    width: 100%;
+    max-width: 600px;
+}
+
+.formulario h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 26px;
+    color: #4E342E;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.formulario h4 {
+    font-size: 18px;
+    color: #4E342E;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.input-con-icono {
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+.icono {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: #4E342E;
+}
+
+.input-con-icono input,
+.input-con-icono select {
+    width: 100%;
+    padding: 10px 10px 10px 36px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    background-color: #fffefc;
+}
+
+.botones-formulario {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.boton-link {
+    text-decoration: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 1rem;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.boton-link.cancelar {
+    background-color: #BE2F35;
+    color: #fff;
+}
+
+.boton-link.cancelar:hover {
+    background-color: #8B1A1A;
+}
+
+.boton-link.continuar {
+    background-color: #6B5B50;
+    color: #F1EFE3;
+}
+
+.boton-link.continuar:hover {
+    background-color: #4E342E;
+}
+
+.pie_pagina {
+    background-color: #6b5b50;
+    padding: 1.5rem 0;
+    color: rgb(255, 255, 255);
+    font-family: Arial, sans-serif;
+}
+.tabla_pie_pagina {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+.tabla_pie_pagina td {
+    padding: 1rem;
+    vertical-align: top;
+    font-size: 0.9em;
+    text-align: center;
+    flex-basis: 45%;
+    max-width: 45%;
+}
+.pie_pagina_izq,
+.pie_pagina_der {
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    .botones-formulario {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .boton-link {
+        width: 100%;
+    }
+
+    .nav {
+        gap: 0.3rem;
+        padding: 0.3rem 0.5rem;
+    }
+    .nav a {
+        font-size: 0.85rem;
+        padding: 0.3rem 0.4rem;
+        min-width: 40px;
+    }
+
+    .contenedor_encabezado {
+        padding-left: 0.5rem;
+        gap: 0.6rem;
+    }
+
+    .logo {
+        width: 50px;
+    }
+
+    .titulo {
+        font-size: 1.5rem;
+        white-space: nowrap;
+    }
+}

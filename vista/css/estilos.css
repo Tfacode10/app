@@ -1,0 +1,301 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e1dab8;
+}
+
+.encabezado {
+    width: 100%;
+    background-color: #6b5b50;
+    padding: 1rem;
+}
+.contenedor_encabezado {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; 
+    gap: 1rem;
+    padding-left: 1rem; 
+}
+.logo {
+    width: 60px;
+    height: auto;
+}
+.titulo {
+    font-size: 2rem;
+    color: white;
+    white-space: nowrap;
+}
+
+.nav {
+    width: 100%;
+    background-color: #e1dab8;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    border-bottom: 2px solid #4d332d;
+    overflow-x: hidden; 
+    white-space: nowrap; 
+    flex-wrap: nowrap; 
+}
+
+.nav a {
+    flex: 1 1 auto; 
+    font-size: 1rem;
+    color: #4d332d;
+    text-decoration: none;
+    padding: 0.4rem 0.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.3rem;
+    white-space: nowrap;
+    transition: background-color 0.3s ease;
+    min-width: 50px; 
+}
+.nav a:hover {
+    background-color: #6b5b50;
+    color: #ffffff;
+    border-radius: 1vw;
+}
+.banner {
+    width: 100%;
+}
+.banner img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.galeria {
+    padding: 2rem 1rem;
+    background-color: #e1dab8;
+    text-align: center;
+}
+.titulo_galeria {
+    font-size: 2.5em;
+    color: #4e342e;
+    margin-bottom: 0.5em;
+}
+.descripcion_galeria {
+    font-size: 1.2em;
+    margin-bottom: 1.5em;
+}
+.contenedor_productos {
+    background-color: #ede7cd;
+    padding: 1.5rem;
+    max-width: 1000px;
+    margin: 0 auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+}
+.producto-item {
+    background-color: #ffffff;
+    padding: 1.2rem;
+    border-radius: 15px;
+    box-shadow: 0 2px 5px rgb(77, 76, 69);
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.producto-item:hover {
+    background-color: rgba(143, 121, 106, 0.848);
+    transform: translateY(-5px) scale(1.02);
+}
+.producto-item a {
+    color: inherit;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.producto-item img {
+    width: 100%;
+    max-width: 60%;
+    height: auto;
+    display: block;
+    margin: 0 auto 0.8rem;
+}
+.producto-item p {
+    font-size: 1em;
+    color: #1f1c1a;
+    margin: 0.2rem 0;
+    word-wrap: break-word;
+}
+.producto-item .precio {
+    font-weight: bold;
+    color: #b4583c;
+    font-size: 1.1em;
+    margin-top: 0.5rem;
+}
+.pie_pagina {
+    background-color: #6b5b50;
+    padding: 1.5rem 0;
+    color: rgb(255, 255, 255);
+    font-family: Arial, sans-serif;
+}
+.tabla_pie_pagina {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+.tabla_pie_pagina td {
+    padding: 1rem;
+    vertical-align: top;
+    font-size: 0.9em;
+    text-align: center;
+    flex-basis: 45%;
+    max-width: 45%;
+}
+.pie_pagina_izq,
+.pie_pagina_der {
+    text-align: center;
+}
+
+@media screen and (max-width: 1000px) {
+    .contenedor_logo_titulo {
+        gap: 0.8rem;
+    }
+    .logo {
+        width: 70px;
+    }
+    .titulo {
+        font-size: 26px;
+    }
+    .nav {
+        flex-wrap: nowrap;
+        overflow-x: hidden;
+        justify-content: space-around;
+    }
+    .nav a {
+        font-size: 14px;
+        padding: 0.4rem 0.6rem;
+        flex-shrink: 1;
+    }
+    .contenedor_productos {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .producto-item {
+        display: block;
+        padding: 0.5rem;
+    }
+    .producto-item p, .producto-item .precio {
+        font-size: 0.9em;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .logo {
+        width: 60px;
+    }
+    .titulo {
+        font-size: 22px;
+    }
+    .nav {
+        flex-wrap: nowrap;
+        overflow-x: hidden;
+        justify-content: space-around;
+    }
+    .nav a {
+        font-size: 13px;
+        padding: 0.3rem 0.5rem;
+        flex-shrink: 1;
+        gap: 0.3em;
+    }
+    .titulo_galeria {
+        font-size: 2em;
+    }
+    .descripcion_galeria {
+        font-size: 1em;
+    }
+    .contenedor_productos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .producto-item {
+        padding: 0.5rem;
+    }
+    .producto-item img {
+        width: 50%;
+        max-width: 50%;
+    }
+    .producto-item p, .producto-item .precio {
+        font-size: 0.85em;
+    }
+    .tabla_pie_pagina {
+        flex-direction: column;
+        align-items: center;
+        padding: 0 1rem;
+    }
+    .tabla_pie_pagina td {
+        flex-basis: 100%;
+        max-width: 100%;
+        padding: 0.5rem 0;
+        font-size: 0.8em;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .logo {
+        width: 50px;
+    }
+    .titulo {
+        font-size: 18px;
+    }
+    .nav {
+        flex-wrap: nowrap;
+        overflow-x: hidden;
+        justify-content: space-around;
+        padding: 0.3rem 0.4rem;
+    }
+    .nav a {
+        font-size: 12px;
+        padding: 0.2rem 0.4rem;
+        flex-shrink: 1;
+    }
+    .contenedor_productos {
+        grid-template-columns: 1fr;
+        border-radius: 5px;
+    }
+    .producto-item {
+        padding: 0.6rem;
+        border-radius: 10px;
+    }
+    .producto-item img {
+        width: 50%;
+        max-width: 60%;
+        margin-bottom: 0.4rem;
+    }
+    .producto-item p {
+        font-size: 0.75em;
+        margin: 0.1rem 0;
+    }
+    .producto-item .precio {
+        font-size: 0.9em;
+        margin-top: 0.3rem;
+    }
+    .galeria {
+        padding: 1rem 0.5rem;
+    }
+    .titulo_galeria {
+        font-size: 1.8em;
+    }
+    .descripcion_galeria {
+        font-size: 0.9em;
+    }
+    .tabla_pie_pagina td {
+        font-size: 0.75em;
+    }
+}

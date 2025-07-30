@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAFETIX</title>
+    <link rel="stylesheet" href="css/estiloRegistroCuenta.css">
+    <script src="https://kit.fontawesome.com/bbf0071ecd.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<!-- Encabezado -->
+<header class="encabezado">
+    <div class="contenedor_logo_titulo">
+       <a href="index.html"><img src="imagenes/logo_sFondoB.png" alt="Logo de CAFETIX" class="logo"></a>
+        <h1 class="titulo"> CAFETIX</h1>
+    </div>
+</header>
+<!-- Contenedor para formulario -->
+<section class="contenedor_form">
+    <div class="formu">
+        <form>
+            <h2>REGISTRAR CUENTA</h2><br>
+            <hr>
+            <h4>Datos personales</h4>
+            <div class="input-con-icono">
+                <i class="fa-solid fa-user icono"></i>
+                <input type="text" name="nombre" placeholder="Nombre completo" required>
+            </div>
+            <div class="input-con-icono">
+                <i class="fa-solid fa-venus-mars icono"></i>
+                <select name="sexo" required>
+                    <option value="">Selecciona sexo</option>
+                    <option value="Femenino">Femenino</option>
+                    <option value="Masculino">Masculino</option>
+                    <option value="Otro">Otro</option>
+                </select>
+            </div>
+            <div class="input-con-icono">
+                <i class="fa-solid fa-cake-candles icono"></i>
+                <input type="date" name="fecha_nacimiento" required>
+            </div>
+            <hr>
+            <h4>Datos de contacto</h4>
+            <div class="input-con-icono">
+                <i class="fa-solid fa-envelope icono"></i>
+                <input type="email" name="correo" placeholder="Correo electrónico" required>
+            </div>
+            <div class="input-con-icono">
+                <i class="fa-solid fa-phone icono"></i>
+                <input type="tel" name="telefono" placeholder="Número de teléfono" required>
+            </div>
+            <div style="text-align: center; margin-top: 1rem;">
+                <a href="index.html" class="boton-link">Cancelar</a>
+                <a href="continuacionRegistro.html" class="boton-link">Continuar</a>
+            </div>
+        </form>
+    </div>
+</section>
+<!-- Pie de pagina-->
+<footer class="pie_pagina">
+    <table class="tabla_pie_pagina">
+        <tr>
+            <td class="pie_pagina_izq">
+                <p> <i class="fa-solid fa-location-dot"></i> Av. Cuarta Avenida 257,Plaza Chedraui,</p>
+                <p>Local 29, México City, Nezahualcóyotl, 57809</p>
+            </td>
+            <td class="pie_pagina_der">
+                <p> © OMEGA </p>
+            </td>
+        </tr>
+    </table>
+</footer>
+</body>
+</html>
